@@ -111,7 +111,7 @@ if all(ALL_API) and user_query:
   with tab1:
     st.header("GENERATE IMAGE GIVE PROMPT")
     if st.button("Click to Generate: ",key="generate_img_button"):
-      with st.spinner("Running Agent..")
+      with st.spinner("Running Agent.."):
         data = f"https://image.pollinations.ai/{user_query}"
         time.sleep(3)
         st.image(data)
@@ -121,7 +121,7 @@ if all(ALL_API) and user_query:
   with tab2:
     st.header("CHECK LATEST NEWS")
     if st.button("Fetch news: ",key="news_button"):
-      with st.spinner("Running Agent .. ")
+      with st.spinner("Running Agent .. "):
       
         prompt = """Give latest news India or world wide news related
         to tech, business, jobs, or user requested Output
