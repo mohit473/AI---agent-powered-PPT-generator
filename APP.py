@@ -121,7 +121,7 @@ if all(ALL_API) and user_query:
   with tab2:
     st.header("CHECK LATEST NEWS")
     if st.button("Fetch news: ",key="news_button"):
-      with st.spinner("Running Agent .. "):
+      with st.spinner("Running Agent .. ")
       
         prompt = """Give latest news India or world wide news related
         to tech, business, jobs, or user requested Output
